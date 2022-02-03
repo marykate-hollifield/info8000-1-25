@@ -12,7 +12,7 @@ for line in lines:
     print(line)
 
 for line in lines:
-    the_sum = the_sum + int(line)
+    the_sum = the_sum + int(line)   
     print(the_sum)
 
 print(sum([int(x) for x in lines]))
