@@ -47,5 +47,21 @@ print(a_list)
 a_list.insert(2,3)
 print(a_list)
 
+#finding the deltas for an interger list
 
+a_list = [3,5,7,10,1,6]
+
+for second_num in a_list[1::2]:
+    print(second_num)
+
+
+deltas = [] #Use this way below for class
+for i in range(1,len(a_list)):
+    deltas.append(a_list[i]-a_list[i-1])
+print(deltas)
+
+deltas2 = a_list[1:].copy()
+for i in range(1,len(a_list)):
+    deltas2[i-1] = (a_list[i] - a_list[i-1])
+print(deltas2)
 
